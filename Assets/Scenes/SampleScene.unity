@@ -186,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301644690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.43186, y: 6.01, z: -10}
+  m_LocalPosition: {x: -10.437698, y: 6.01, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -356,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.43186, y: 6.01, z: -10}
+  m_LocalPosition: {x: -10.437698, y: 6.01, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 1482324890}
   - component: {fileID: 1482324891}
   m_Layer: 0
-  m_Name: Closed Sprite Shape
+  m_Name: Level Sprite Shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1399,7 +1399,7 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 10
+  m_Speed: 20
   m_SpeedVariation: 0
   m_ForceScale: 0.1
   m_UseContactForce: 0
@@ -1417,6 +1417,7 @@ GameObject:
   - component: {fileID: 1696058662}
   - component: {fileID: 1696058666}
   - component: {fileID: 1696058667}
+  - component: {fileID: 1696058668}
   m_Layer: 0
   m_Name: Snowboarder
   m_TagString: Untagged
@@ -1437,8 +1438,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 15
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1494,6 +1495,19 @@ CircleCollider2D:
   m_Offset: {x: 0.42, y: 0.67}
   serializedVersion: 2
   m_Radius: 0.34
+--- !u!114 &1696058668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696058661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5dd4b31c26aa3d45bf4e4bd4bf6bea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 8
 --- !u!1 &1891436748
 GameObject:
   m_ObjectHideFlags: 0
